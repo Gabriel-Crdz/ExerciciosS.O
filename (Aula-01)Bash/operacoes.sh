@@ -2,7 +2,7 @@
 #=============================
 #Script: operacoes.sh
 #Demostra as operaçoes basicas
-# Autor: Eu mesmo
+# Autor: Gabriel S. Cardozo
 #=============================
 enter(){
     read -p "Pressione ENTER"
@@ -48,6 +48,7 @@ enter
 #Renomear arquivo
 echo "Renomeando arquivo"
 mv arquivo2.txt notas.txt
+ls
 enter
 
 #Criar um backup
@@ -65,6 +66,7 @@ enter
 #Remover arquivos
 echo "Removendo arquivos"
 rm arquivo3.txt
+ls
 enter
 
 #Apagar diretorio
