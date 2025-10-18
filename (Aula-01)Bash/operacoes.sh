@@ -27,7 +27,7 @@ enter
 
 #Criar tres arquivos vazios
 echo "Criando tres arquivos txt"
-touch arquivo1.txt, arquivo2.txt, arquivo3.txt
+touch arquivo1.txt arquivo2.txt arquivo3.txt
 enter
 
 #Listar diretorio
@@ -53,17 +53,18 @@ enter
 #Criar um backup
 echo "Criando backup"
 mkdir backup
-mv arquivo1.txt /backup
+chmod +w backup/
+mv arquivo1.txt backup/
 enter
 
 #Mostrar a estrutura
 echo "Mostrando a estrutura"
-ls -R meu_projeto
+ls -R
 enter
 
 #Remover arquivos
 echo "Removendo arquivos"
-rm /backup/arquivo1.txt
+rm arquivo3.txt
 enter
 
 #Apagar diretorio
