@@ -1,21 +1,21 @@
 # Peça o peso (kg) e altura (m) do usuário e calcule o IMC: imc = peso / (altura ** 2)
 echo "============================"
 read -p "Digite seu peso: " peso
-read -p "Digite sua alturao: " altura
+read -p "Digite sua altura: " altura
 
-imc=$(echo "$peso / ($altura**2)" | bc)
+imc=$(echo "$peso / ($altura^2)" | bc -l)
 
-if(($imc < 18.5)); then
+if (( $(echo "$imc < 18.5" | bc -l) )); then
     status="Abaixo do peso"
-elif(($imc => 18.5) && ($imc <= 24.9)); then
+elif (( $(echo "$imc => 18.5 && $imc <= 24.9" | bc -l) )); then
     status="Peso normal"
-elif(($imc >= 25) && ($imc <= 29.9)); then
+elif (( $(echo "$imc >= 25 && $imc <= 29.9" | bc -l) )); then
     status="Sobrepeso"
 else
     status="Obesidade"
 fi
 
-clear
+# clear
 echo "Resultado:"
-echo "Seu IMC é: $imc"
+echo "Seu IMC e: $imc" | bc
 echo "Voce esta $status"
