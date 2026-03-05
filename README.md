@@ -4,7 +4,7 @@
 * ***SEMESTRE:*** 2º
 * ***HORA AULA:*** 80h
 * ***HORA RELOGIO:*** 67h
-* ### ***NOTA: Esse repositorio contem apenas as aulas de Shell Script***
+* ### ***NOTA: Esse repositorio contem apenas as aulas de Shell Script[por enquanto]***
 
 ### Objetivo:
 Fornecer subsídios para o aluno compreender a estrutura básica de organização
